@@ -1,0 +1,23 @@
+/* Footer.css */
+.footer {
+  background-color: black;
+  padding: 20px;
+  text-align:start;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  font-size: 13px;
+  color:#d3d3d3
+}
+
+.footer__info,
+.footer__customer-service,
+.footer__social-media {
+  margin-bottom: 20px;
+}
+
+.footer__social-media a {
+  margin: 0 10px;
+  text-decoration: none;
+  color:#d3d3d3;
+}

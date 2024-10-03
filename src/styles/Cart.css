@@ -1,0 +1,148 @@
+/* 장바구니 전체 레이아웃 */
+.cart-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cart-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 아이템 세부 정보 섹션 */
+/* .item-details {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+} */
+.discount-rate {
+    color: #ff4d4f;
+    font-weight: 600;
+    font-size: large;
+}
+
+.originalPrice {
+    color: #a8abad;
+    text-decoration: line-through;
+    text-decoration-color: #a8abad;
+    font-size: medium;
+}
+
+.item-details {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.item-details h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.item-details p {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #666;
+}
+
+.item-info p {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: #333;
+    font-weight: 500;
+    align-items: center;
+}
+
+/* 체크박스 스타일 */
+.item-selections input[type="checkbox"] {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    accent-color: #253240; /* 체크박스 색상 */
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* 수량 버튼 섹션 */
+.item-quantity-add-btn {
+    gap: 10px;
+    margin-left: auto;
+}
+
+.item-quantity-minus-btn {
+    gap: 10px;
+    margin-right: auto;
+}
+
+/* 삭제 버튼 섹션 */
+.item-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.item-actions button {
+    padding: 8px 12px;
+    font-size: 1rem;
+    color: #ff4d4f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.item-actions button:hover {
+    background-color: #d9363e;
+    color: #eeeeee;
+}
+
+/* 장바구니 총합 섹션 */
+.cart-total {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.checkout-btn {
+    width: 100%; /* 버튼을 컨테이너 너비로 설정 */
+    padding: 15px 0;
+    background-color: #212121; /* 빨간색 배경 */
+    color: white; /* 흰색 글자 */
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-total p {
+    margin: 0;
+}
